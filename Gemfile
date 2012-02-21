@@ -4,8 +4,12 @@ gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'mysql2'
+group :development do
+  gem 'mysql2'
+end
+group :production do
+  gem 'pg'
+end
 gem 'therubyracer'
 gem 'kaminari'
 gem 'will_filter', "~> 3.1.2"
