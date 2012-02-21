@@ -4,8 +4,9 @@ gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-group :development do
+group :development,:test do
   gem 'mysql2'
+  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 group :production do
   gem 'pg'
@@ -37,7 +38,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
- gem 'ruby-debug19', :require => 'ruby-debug'
+ 
 gem 'devise'
 group :test do
   # Pretty printed test output
